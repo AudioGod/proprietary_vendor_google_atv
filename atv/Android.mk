@@ -6,7 +6,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
-LOCAL_PREBUILT_JNI_LIBS := lib/libcast_shell_android.so 
+LOCAL_PREBUILT_JNI_LIBS := lib/libcast_shell_android.so lib/libcast_graphics_1.0.so lib/libcast_media_1.0.so 
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_OVERRIDES_PACKAGES := 
@@ -156,6 +156,17 @@ LOCAL_OVERRIDES_PACKAGES :=
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := Katniss
+LOCAL_PRIVILEGED_MODULE := false
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
+LOCAL_PREBUILT_JNI_LIBS := lib/libgoogle_hotword_jni.so lib/libgoogle_recognizer_jni.so
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_OVERRIDES_PACKAGES := 
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := PlayGames
 LOCAL_PRIVILEGED_MODULE := false
 LOCAL_MODULE_TAGS := optional
@@ -172,7 +183,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
-LOCAL_PREBUILT_JNI_LIBS := lib/libAppDataSearch.so lib/libconscrypt_gmscore_jni.so lib/libgames_rtmp_jni.so lib/libgcastv2_base.so lib/libgcastv2_support.so lib/libgmscore.so lib/libgms-ocrclient.so lib/libjgcastservice.so lib/libWhisper.so 
+LOCAL_PREBUILT_JNI_LIBS := lib/libAppDataSearch.so lib/libNearbyApp.so lib/libWhisper.so lib/libconscrypt_gmscore_jni.so lib/libdirect-audio.so lib/libgcastv2_base.so lib/libgcastv2_support.so lib/libgmscore.so lib/libgms-ocrclient.so lib/libjgcastservice.so lib/libgames_rtmp_jni.so lib/libwearable-selector.so lib/libleveldbjni.so
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_OVERRIDES_PACKAGES := 
@@ -239,7 +250,7 @@ LOCAL_PRIVILEGED_MODULE := false
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
-LOCAL_PREBUILT_JNI_LIBS := lib/libm2ts_player.so 
+LOCAL_PREBUILT_JNI_LIBS := lib/libcronet.so lib/libm2ts_player.so lib/libvpx.so lib/libvpxJNI.so
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_OVERRIDES_PACKAGES := 
