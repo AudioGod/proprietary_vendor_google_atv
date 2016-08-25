@@ -7,6 +7,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
 LOCAL_PREBUILT_JNI_LIBS := lib/libcast_shell_android.so 
+LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_OVERRIDES_PACKAGES := 
 include $(BUILD_PREBUILT)
@@ -172,6 +173,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
 LOCAL_PREBUILT_JNI_LIBS := lib/libAppDataSearch.so lib/libconscrypt_gmscore_jni.so lib/libgames_rtmp_jni.so lib/libgcastv2_base.so lib/libgcastv2_support.so lib/libgmscore.so lib/libgms-ocrclient.so lib/libjgcastservice.so lib/libWhisper.so 
+LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_OVERRIDES_PACKAGES := 
 include $(BUILD_PREBUILT)
@@ -238,6 +240,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
 LOCAL_PREBUILT_JNI_LIBS := lib/libm2ts_player.so 
+LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_OVERRIDES_PACKAGES := 
 include $(BUILD_PREBUILT)
