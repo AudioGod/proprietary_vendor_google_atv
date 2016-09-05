@@ -1,6 +1,7 @@
 PRODUCT_PACKAGES += \
     AndroidMediaShell \
     AtvCustomization \
+		AtvRemoteService \
     AtvWidget \
     Backdrop \
     CanvasCloudServices \
@@ -8,19 +9,26 @@ PRODUCT_PACKAGES += \
     ConfigUpdater \
     FuguPairingTutorial \
     GamepadPairingService \
+    GlobalKeyInterceptor \
     GoogleBackupTransport \
     GoogleCalendarSyncAdapter \
     GoogleContactsSyncAdapter \
+    GoogleExtServices \
+    GoogleExtShared \
     GoogleServicesFramework \
     GoogleTTS \
     Katniss \
     LandscapeWallpaper \
+    LeanbackIme \
     Music2Pano \
     NoTouchAuthDelegate \
+    Overscan \
     PhoneskyKamikazeCanvas \
     PlayAutoInstallConfigFugu \
     PlayGames \
     PrebuiltGmsCorePano \
+    RecommendationsService \
+    RemoteControlService \
     SecondScreenSetup \
     SecondScreenSetupAuthBridge \
     SetupWraith \
